@@ -1,28 +1,32 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+int main()
+{
     int t;
     cin >> t;
-    while(t--){
+    while (t--)
+    {
         string x;
         cin >> x;
-        int c=0, r=0;
-        for(int i=0; i<x.size(); i++){
-            if(x[i] == '0'){
-                c++; 
+        int c = 0, r = 0;
+        for (int i = 0; i < x.size(); i++)
+        {
+            if (x[i] == '0')
+            {
+                c++;
             }
-                
-            else{
+
+            else
+            {
                 r++;
             }
-                
         }
-        //cout << c << " " << r << endl; 
-        if(c==1 || r==1) 
+        // cout << c << " " << r << endl;
+        if (c == 1 || r == 1)
             cout << "Yes" << endl;
-        
-        else    
+
+        else
             cout << "No" << endl;
     }
 }
